@@ -1,0 +1,263 @@
+:root{
+    font-size: 18px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2 linear;
+}
+body{
+    background: linear-gradient(135deg, #378dfd, #6dd5ff);
+    font-family: Arial, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+header{
+    top: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgb(4, 21, 173);
+    height: 80px;
+    border-bottom: 2px solid white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px; 
+}
+nav a{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-family: sans-serif;
+}
+.hat{
+    margin-left: 40px;
+}
+.instagram{
+    width: 100px;
+    margin-right: 100px;
+}
+section{
+    position: relative;
+    margin-top: 80px;
+
+}
+section h1{ 
+    font-family: 'fredoka';
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 251, 11);
+    text-shadow: 2px 2px 5px gray;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 40px;
+    margin-top: 20px;
+}
+.foto{
+    width: 740px;
+    height: auto;
+    background-color: rgb(4, 21, 173);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    box-shadow: 2px 2px 10px gray;
+
+}
+.foto img{
+    width: 660px;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+
+}
+.principalText{
+    font-size: 18px;
+    line-height: 1.7;
+    padding-top: 10px;
+    color: white;
+    text-shadow: 2px 2px 5px gray;
+    align-self: flex-start;
+    margin-bottom: 20px;
+
+}
+footer{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(53, 206, 7);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+    width: 50%;
+    max-width: 900px;
+    margin: 10px auto;
+    gap: 20px;
+    height: 60px;
+}
+footer a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    text-align: center;
+}
+footer p{
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 5px gray;
+}
+.containerBrinquedos{
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 20px;
+    padding: 40px 40px;
+    background-color: rgb(4, 21, 173);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px gray;
+}
+.containerBrinquedos img, video{
+    width: 80%;
+    margin-top: auto;
+    margin-left: 30px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+}
+.video{
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 40px 0;
+    background-color: rgb(4, 21, 173);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px gray;
+}
+.video video{
+    width: 80%;
+    margin-top: auto;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+}
+.galeria img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.containerDecoracoes{
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 20px;
+    padding: 40px 40px;
+    background-color: rgb(4, 21, 173);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px gray;
+    padding-left: 80px;
+}
+.containerDecoracoes img{
+    width: 80%;
+    margin-top: auto;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+}
+@media (max-width: 768px) {
+
+    /* NAV */
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 5px;
+    }
+
+    .hat {
+        margin-left: 0;
+    }
+
+    .instagram {
+        margin-right: 0;
+        width: 80px;
+    }
+
+    /* CONTAINER PRINCIPAL */
+    .container {
+        flex-direction: column;
+        margin: 20px;
+        gap: 20px;
+    }
+
+    /* FOTO */
+    .foto {
+        width: 100%;
+    }
+
+    .foto img {
+        width: 100%;
+        margin: 10px;
+    }
+
+    /* TEXTO */
+    .principalText {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* TITULO */
+    section h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    /* GRID (BRINQUEDOS E DECORAÇÕES) */
+    .containerBrinquedos,
+    .containerDecoracoes {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .containerDecoracoes {
+        padding-left: 20px;
+    }
+
+    /* IMAGENS */
+    .containerBrinquedos img,
+    .containerDecoracoes img,
+    .video video {
+        width: 100%;
+        margin: auto;
+    }
+
+    /* FOOTER */
+    footer {
+        width: 90%;
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+}
